@@ -21,7 +21,6 @@ function Logement() {
             <p>{logement.location}</p>
             <TagList
               listOfTags={logement.tags}
-              logementId={logement.id}
             />
           </div>
           <div className="logement_infosPlus">

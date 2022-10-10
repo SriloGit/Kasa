@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-function TagList({ listOfTags, logementId }) {
+function TagList({ listOfTags}) {
   return (
     <div className="component tagList">
       {listOfTags.map((tag) => (
@@ -12,7 +12,6 @@ function TagList({ listOfTags, logementId }) {
 
 TagList.propTypes = {
   listOfTags: PropTypes.array.isRequired,
-  logementId: PropTypes.string.isRequired,
 };
 
 export default TagList;
