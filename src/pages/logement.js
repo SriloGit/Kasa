@@ -1,9 +1,9 @@
 import { useParams, Navigate } from "react-router-dom";
 import datas from "../datas/logements.json";
-import Gallery from "../components/carrousel";
+import Carrousel from "../components/carrousel";
 import TagList from "../components/tagList";
 import Stars from "../components/starrate";
-import Collapse from "../components/dropdown";
+import Dropdown from "../components/dropdown";
 
 function Logement() {
   let { id } = useParams();
@@ -14,7 +14,7 @@ function Logement() {
   return (
     <main className="page component logement">
       <article>
-        <Gallery arrayOfImg={logement.pictures} />
+        <Carrousel arrayOfImg={logement.pictures} />
         <div className="logement_informations">
           <div className="logement_infos">
             <h1>{logement.title}</h1>
@@ -34,15 +34,15 @@ function Logement() {
             </div>
           </div>
         </div>
-        <div className="logement_collapse">
-          <Collapse title="Description">{logement.description}</Collapse>
-          <Collapse title="Équipements">
+        <div className="logement_Dropdown">
+          <Dropdown title="Description">{logement.description}</Dropdown>
+          <Dropdown title="Équipements">
             <ul>
               {logement.equipments.map((item) => (
                 <li key={logement.id + "_" + item}>{item}</li>
               ))}
             </ul>
-          </Collapse>
+          </Dropdown>
         </div>
       </article>
     </main>
