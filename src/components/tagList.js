@@ -4,7 +4,7 @@ function TagList({ listOfTags}) {
   return (
     <div className="component tagList">
       {listOfTags.map((tag) => (
-        <div className="component tag">{tag}</div>
+        <div className="component tag" key={tag}>{tag}</div>
       ))}
     </div>
   );

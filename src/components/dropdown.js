@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
 
-function Dropdown({ title, children }) {
+function Dropdown({ title, description }) {
   const [show, setShow] = useState(false);
   const [arrowClass, setArrowClass] = useState("arrow_down");
 
@@ -19,7 +19,7 @@ function Dropdown({ title, children }) {
         className="dropdown_content"
         style={{ display: show ? "block" : "none" }}
       >
-        {children}
+        {description}
       </div>
     </article>
   );

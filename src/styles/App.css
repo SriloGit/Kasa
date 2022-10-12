@@ -64,20 +64,20 @@ body {
   margin-bottom: 15px;
 }
 
-.logement_infosPlus--host {
+.logement_infosPlus-host {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.logement_infosPlus--host img {
+.logement_infosPlus-host img {
   border-radius: 50%;
   height: 32px;
   width: 32px;
   object-fit: cover;
 }
 
-.logement_infosPlus--host p {
+.logement_infosPlus-host p {
   max-width: 80px;
   text-align: right;
 }
@@ -129,6 +129,7 @@ body {
   height: 111px;
   object-fit: cover;
   border-radius: 5px;
+  filter: brightness(50%);
 }
 
 .home_illustration h1 {
@@ -431,20 +432,20 @@ body {
     gap: 10px;
   }
 
-  .logement_infosPlus--host {
+  .logement_infosPlus-host {
     display: flex;
     align-items: center;
     gap: 10px;
   }
 
-  .logement_infosPlus--host img {
+  .logement_infosPlus-host img {
     border-radius: 50%;
     height: 64px;
     width: 64px;
     object-fit: cover;
   }
 
-  .logement_infosPlus--host p {
+  .logement_infosPlus-host p {
     max-width: 93px;
     font-size: 18px;
   }
