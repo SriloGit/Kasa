@@ -4,15 +4,18 @@ import Carrousel from "../components/carrousel";
 import TagList from "../components/tagList";
 import Stars from "../components/starrate";
 import Dropdown from "../components/dropdown";
+import Footer from '../components/footer'
 
 function Logement() {
+  //Get the id param from the URL
   let { id } = useParams();
+  //Get the data of the correct accomodation with his id
   const logement = datas.filter((element) => element.id === id)[0];
   if (logement === undefined) {
     return <Navigate replace to="/error" />;
   }
   return (
-    <main className="page component logement">
+    <><main className="page component logement">
       <article>
         <Carrousel arrayOfImg={logement.pictures} />
         <div className="logement_informations">
@@ -41,15 +44,11 @@ function Logement() {
                 <li key={logement.id + "_" + item}>{item}</li>
               ))}
             </ul>}>
-            {/*<ul>
-              {logement.equipments.map((item) => (
-                <li key={logement.id + "_" + item}>{item}</li>
-              ))}
-              </ul>*/}
           </Dropdown>
         </div>
       </article>
     </main>
+    <Footer /></>
   );
 }
 

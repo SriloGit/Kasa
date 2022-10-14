@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-
+//Create a thumb for the accomodation and link it to the correct page
 function Thumb({ title, id, cover }) {
   return (
     <li className="component thumb">

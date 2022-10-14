@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import red_star from "../assets/red_star.png";
 import grey_star from "../assets/grey_star.png";
 
+//Create stars according to the rating of the accomodation
 function Starrate({ rating }) {
   let stars = [];
   let star = "";

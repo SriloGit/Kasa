@@ -6,6 +6,7 @@ function Dropdown({ title, description }) {
   const [arrowClass, setArrowClass] = useState("arrow_down");
 
   function switchContent() {
+    //Manage the arrow and to show or not the content of the dropdown
     setShow(!show);
     setArrowClass(show ? "arrow_down" : "arrow_up");
   }

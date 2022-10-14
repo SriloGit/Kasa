@@ -12,13 +12,14 @@ function Carrousel({ arrayOfImg }) {
         className="image"
         src={currentImage}
         alt={`Image ` + (currentIndex + 1)}
-      />
+      />      
       {arrayOfImg.length > 1 && (
         <div className="arrows">
           <img
             className="arrow_left"
             src={arrow_left}
             alt=""
+            //Change the img of the gallery to the last img in the array of img
             onClick={() =>
               updateCurrentIndex(
                 currentIndex === 0 ? arrayOfImg.length - 1 : currentIndex - 1
@@ -29,6 +30,7 @@ function Carrousel({ arrayOfImg }) {
             className="arrow_right"
             src={arrow_right}
             alt=""
+            //Change the img of the gallery to the next img in the array of img
             onClick={() =>
               updateCurrentIndex(
                 currentIndex === arrayOfImg.length - 1 ? 0 : currentIndex + 1

@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-
+// Create each tag of the accomodation
 function TagList({ listOfTags}) {
   return (
     <div className="component tagList">

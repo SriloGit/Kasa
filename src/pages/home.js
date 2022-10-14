@@ -2,10 +2,11 @@ import '../styles/App.css';
 import Thumb from '../components/thumb'
 import data from '../datas/logements.json'
 import homebg from '../assets/Home_background.png'
+import Footer from '../components/footer'
 
 function Home() {
     return (
-	    <main className="page component home">
+	    <><main className="page component home">
             <article>
                 <div className="home_illustration">
                     <img src={homebg} alt="" />
@@ -17,17 +18,17 @@ function Home() {
                 <div className="home_thumbs">
                     <ul>
                         {data.map((log) => (
-                        <Thumb
-                            key={log.id}
-                            id={log.id}
-                            title={log.title}
-                            cover={log.cover}
-                        />
+                            <Thumb
+                                key={log.id}
+                                id={log.id}
+                                title={log.title}
+                                cover={log.cover} />
                         ))}
                     </ul>
                 </div>
             </article>
         </main>
+        <Footer /></>
 	)
 }
 
